@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CricketGPT from "./cricketgpt";
+import './cricketgpt.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMI5G88GxcL0xDZZW83ESjf6N5lpwQY-WsQ&s" 
+        style={{ width: "10%", objectFit: "cover", marginBottom: "0px" , marginLeft:"20px",marginTop:"10px"
+        }} 
+      />
+      <CricketGPT />
     </div>
   );
 }
